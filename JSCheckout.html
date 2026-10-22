@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jersey Store - Checkout</title>
+    <link rel="stylesheet" href="JSStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="IMG/Logo/Logo 2.png" alt="Logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="JSHtml.html">Home</a></li>
+                <li><a href="JSShop.html">Shop</a></li>
+                <li><a href="JSAbout.html">About</a></li>
+                <li><a href="JSContact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="JSCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="JSCartHtml.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>Checkout</h2>
+        <p>Review your details and place your order.</p>
+    </section>
+
+    <section id="checkout" class="section-p1">
+        <h2>Billing Details:</h2>
+        <label>Full Name:</label>
+        <input type="text" id="billing-name" required>
+
+        <label>Email Address:</label>
+        <input type="email" id="email-address" required>
+
+        <label>Phone Number:</label>
+        <input type="number" id="phone-number" required>
+
+        <label>Billing Address:</label>
+        <textarea id="billing-address" required></textarea>
+
+        <label>
+            <input type="checkbox" id="same-address"> Shipping address same as billing
+        </label>        
+
+        <div id="jerseyList">
+            <h3>Customize Your Jerseys (Optional)</h3>
+      
+            <!-- Jersey Customization Block #1 -->
+            <div class="jersey-item" style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+              <p>Jersey 1</p>
+      
+              <label>Jersey Type:</label>
+              <input type="text" name="jerseyType[]" placeholder="e.g. Brazil Home Kit">
+      
+              <label>Custom Name:</label>
+              <input type="text" name="customName[]" placeholder="Leave blank for no custom name">
+      
+              <label>Custom Number:</label>
+              <input type="number" name="customNumber[]" placeholder="Leave blank for no custom number" min="0" max="99">
+            </div>
+          </div>
+      
+          <!-- Add More Button -->
+          <button type="button" id="addJerseyBtn">+ Add Another Jersey</button>
+      
+          <br><br>
+
+        <h2>Payment Method:</h2>
+        <label>
+            <input type="radio" name="payment" value="upi" required> UPI / Net Banking
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="cash" required> Cash on Delivery
+        </label>
+
+        <h2>Order Summary:</h2>
+        <div id="order-summary"></div>
+
+        <h3>Total: ₹<span id="total-amount">0</span></h3>
+
+        <button id="placeOrder">Place Order</button>
+    </section>
+    <hr>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="IMG/Logo/Logo 2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Phone : </strong><br>+91 84461 98220 <br>+91 8010062827 </p>
+            <p><strong>Email : </strong><br>jerseystore@gmail.com </p>
+            <div class="follow">
+                <h4>Follow us:</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="JSAbout.html">About us</a>
+            <a href="JSContact.html">Contact us</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="JSAccLogin.html">Sign in</a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2025, The Jersey Store</p>
+        </div>
+    </footer>
+
+    <script src="JSScript.js"></script>
+</body>
+</html>

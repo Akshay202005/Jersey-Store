@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jersey Store</title>
+    <link rel="stylesheet" href="JSStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="IMG/Logo/Logo 2.png" alt="Logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="JSHtml.html">Home</a></li>
+                <li><a class="active" href="JSShop.html">Shop</a></li>
+                <li><a href="JSAbout.html">About</a></li>
+                <li><a href="JSContact.html">Contact</a></li>
+                <li id="lg-bag"><a href="JSCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="JSCartHtml.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="pro-details" class="section-p1">
+        <div class="single-pro-img">
+            <img src="img/Italin League/AC Milan.png" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h6>Club Jersey</h6>
+            <h4>AC Milan 24/25 <br>Home Jersey</h4>
+            <h2>₹399</h2>
+            <select>
+                <option>Select size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1" min="1" max="100">
+            <button class="normal" onclick="handleAddToCart()">Add to Cart</button>
+
+            <h4>Product Details</h4>
+            <span>
+                <p><strong>Material:</strong> Polyester</p>
+                <p><strong>Fit / Neck:</strong> Regular fit, crew neck with white collar</p>
+                <p><strong>Care Instructions:</strong> Machine wash cold, no bleach.</p>
+                <p><strong>Color:</strong> Red and black with white accents</p>
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href = 'JSManCity.html';">
+                <img src="img/Premier League/Man City Third.png" alt="">
+                <div class="des">
+                    <h5>Manchester City 24/25 <br>Third Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+
+            <div class="pro" onclick="window.location.href = 'JSTotHotspur.html';">
+                <img src="img/Premier League/Hotspur.png" alt="">
+                <div class="des">
+                    <h5>Tottenham Hotspur 23/24 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+
+            <div class="pro" onclick="window.location.href = 'JSManUtd.html';">
+                <img src="img/Premier League/Man Utd.png" alt="">
+                <div class="des">
+                    <h5>Manchester United 24/25 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+            <div class="pro" onclick="window.location.href = 'JSArsenal.html';">
+                <img src="img/Premier League/Arsenal FC.png" alt="">
+                <div class="des">
+                    <h5>Arsenal FC 24/25 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+            <div class="pro" onclick="window.location.href = 'JSNapoli.html';">
+                <img src="img/Italin League/Napoli.png" alt="">
+                <div class="des">
+                    <h5>Napoli 24/25 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+            <div class="pro" onclick="window.location.href = 'JSRealMadrid.html';">
+                <img src="img/Spanish League/Real Madrid.png" alt="">
+                <div class="des">
+                    <h5>Real Madrid 17/18 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+            <div class="pro" onclick="window.location.href = 'JSACRoma.html';">
+                <img src="img/Italin League/AC Roma.png" alt="">
+                <div class="des">
+                    <h5>AS Roma 24/25 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+            <div class="pro" onclick="window.location.href = 'JSJuventus.html';">
+                <img src="img/Italin League/Juventus.png" alt="">
+                <div class="des">
+                    <h5>Juventus 24/25 <br>Home Jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h4>₹399</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+<hr>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="IMG/Logo/Logo 2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Phone : </strong><br>+91 84461 98220 <br>+91 8010062827 </p>
+            <p><strong>Email : </strong><br>jerseystore@gmail.com </p>
+            <div class="follow">
+                <h4>Follow us : </h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="JSAbout.html">About us</a>
+            <a href="JSContact.html">Contact us</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="JSAccLogin.html">Sign in</a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2025, The Jersey Store</p>
+        </div>
+    </footer>
+
+
+    <script src="JSScript.js"></script>
+</body>
+</html>
